@@ -65,6 +65,9 @@ class PromotionsInstantWin_Plugin extends Promotions_Plugin_Base
    */
   public function on_register( $result, $params )
   {
+    if( !Snap::inst('Promotions_Functions')->is_enabled('instant_win', $post->ID) )
+      return $result;
+    
     if( is_array($result) && isset($result['entry_id']) ){
       $result = $this->run( $result );
     }
@@ -76,6 +79,9 @@ class PromotionsInstantWin_Plugin extends Promotions_Plugin_Base
    */
   public function on_enter( $result )
   {
+    if( !Snap::inst('Promotions_Functions')->is_enabled('instant_win', $post->ID) )
+      return $result;
+    
     if( is_array($result) && isset($result['entry_id']) ){
       $result = $this->run( $result );
     }
@@ -107,10 +113,11 @@ class PromotionsInstantWin_Plugin extends Promotions_Plugin_Base
     }
     else {
       $reg = get_post( get_post( $result['entry_id'] )->post_parent );
-      $win = Snap::inst('PromotionsInstantWin_Engine')->run( $promotion_id, $reg->ID );
+      $win = Snap::inst('PromotionsInstantWin_Engine')->run( get_the_ID(), $reg->ID );
       $result['instantwin'] = array('win' => false);
       if( $win ){
         $result['instantwin']['win'] = true;
+        $result['instantwin']['result'] = $win;
         $result['instantwin']['prize'] = array('id'=>$win->post_excerpt);
       }
     }

@@ -4,17 +4,14 @@ class PromotionsInstantWin_Engine
 {
   public function run( $promotion_id, $registration_id )
   {
-    
     global $wpdb;
-    
-    $time = microtime();
     
     $sql = "
     
       UPDATE `{$wpdb->posts}` `p`
         SET `post_status` = 'claimed',
-            `post_name` = %s
-            `post_title` = %s
+            `post_name` = %s,
+            `post_title` = %s,
             `post_content` = %s
         
         WHERE `post_status` != 'claimed'
@@ -27,7 +24,7 @@ class PromotionsInstantWin_Engine
         LIMIT 1
     ";
     
-    $key = $time.mt_rand(0,10000).$registration_id;
+    $key = sanitize_title( 'tmp'.mt_rand(1000,9999).$registration_id );
     
     $date = Snap::inst('Promotions_Functions')->now()->format('Y-m-d H:i:s');
     $stmt = $wpdb->prepare( $sql, $key, $key, $registration_id, $date, $promotion_id );
@@ -36,13 +33,11 @@ class PromotionsInstantWin_Engine
       return false;
     }
     
-    // okay... lets find that winner!
-    $posts = get_posts(array(
-      'post_name' => $key
-    ));
+    $sql = "SELECT ID FROM `{$wpdb->posts}` `p` WHERE `post_name` = %s";
+    $stmt = $wpdb->prepare( $sql, $key);
     
-    if( is_array( $posts ) && count( $posts ) ){
-      $post = $posts[0];
+    if( ($id = $wpdb->get_var($stmt)) ){
+      $post = get_post($id);
       update_post_meta($post->ID, 'registration_id', $registration_id);
       return $post;
     }
