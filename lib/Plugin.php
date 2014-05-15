@@ -6,6 +6,9 @@ class PromotionsInstantWin_Plugin extends Promotions_Plugin_Base
   public function init()
   {
     Snap::inst('PromotionsInstantWin_Admin');
+    $this->register_field_groups(
+      'instant-win'
+    );
   }
   
   /**
@@ -15,17 +18,6 @@ class PromotionsInstantWin_Plugin extends Promotions_Plugin_Base
   {
     $features['instant_win'] = 'Instant Win';
     return $features;
-  }
-  
-  /**
-   * @wp.action     promotions/init
-   */
-  public function promotions_init()
-  {
-    $this->register_field_groups(
-      'instant-win'
-    );
-    // $this->register_data_dir(THEME_DIR.'/data');
   }
   
   /**
