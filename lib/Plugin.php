@@ -7,7 +7,7 @@ class PromotionsInstantWin_Plugin extends Promotions_Plugin_Base
   {
     Snap::inst('PromotionsInstantWin_Admin');
     $this->register_field_groups(
-      'instant-win'
+      'instant-win', 'instant-win-messages'
     );
   }
   
