@@ -115,4 +115,21 @@ class PromotionsInstantWin_Plugin extends Promotions_Plugin_Base
     }
     return $result;
   }
+  
+  /**
+   * @wp.filter   promotions/content/template
+   * @wp.priority 20
+   */
+  public function iw_template( $template )
+  {
+    if( !Snap::inst('Promotions_Functions')->is_enabled('instant_win') ){
+      return $template;
+    }
+    $result = Snap::inst('Promotions_Core_Registration_Plugin')->get_result();
+    if( !$result ) return $template;
+    if( $result && isset($result['instantwin']) && $result['instantwin']['win'] ){
+      return 'iw-win';
+    }
+    return 'iw-lose';
+  }
 }
