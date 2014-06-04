@@ -188,7 +188,7 @@ SQL;
         
         $prizes = get_field('instantwin_prizes');
         $result['instantwin']['win'] = true;
-        $result['instantwin']['result'] = $win;
+        //$result['instantwin']['result'] = $win;
         $result['instantwin']['prize'] = array('id'=>$win->post_excerpt);
         
         Snap::inst('Promotions_Analytics')
@@ -199,6 +199,7 @@ SQL;
         foreach( $prizes as $prize ){
           if( $prize['id'] == $win->post_excerpt ){
             update_post_meta( $result['entry_id'], 'instant_win_prize_name', $prize['name'] );
+            $result['prize']['name'] = $prize['name'];
           }
         }
       }
