@@ -6,18 +6,18 @@ if(function_exists("register_field_group"))
     'title' => 'Instant Win Messages',
     'fields' => array (
       array (
-        'key' => 'field_53760cef92208',
+        'key' => 'field_538f5e8ab1b6a',
         'label' => 'Instant Win Winning Message',
-        'name' => 'message_iw_win',
+        'name' => 'instant_win_winning_message',
         'type' => 'wysiwyg',
         'default_value' => '',
         'toolbar' => 'full',
         'media_upload' => 'yes',
       ),
       array (
-        'key' => 'field_53760d199220a',
+        'key' => 'field_538f5ea0b1b6b',
         'label' => 'Instant Win Losing Message',
-        'name' => 'message_iw_lose',
+        'name' => 'instant_win_losing_message',
         'type' => 'wysiwyg',
         'default_value' => '',
         'toolbar' => 'full',

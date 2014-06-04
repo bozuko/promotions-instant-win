@@ -127,7 +127,7 @@ SQL;
    */
   public function on_register( $result, $params )
   {
-    if( !Snap::inst('Promotions_Functions')->is_enabled('instant_win', $post->ID) )
+    if( !Snap::inst('Promotions_Functions')->is_enabled('instant_win') )
       return $result;
     
     if( is_array($result) && isset($result['entry_id']) ){
@@ -141,7 +141,7 @@ SQL;
    */
   public function on_enter( $result )
   {
-    if( !Snap::inst('Promotions_Functions')->is_enabled('instant_win', $post->ID) )
+    if( !Snap::inst('Promotions_Functions')->is_enabled('instant_win') )
       return $result;
     
     if( is_array($result) && isset($result['entry_id']) ){
