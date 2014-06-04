@@ -199,7 +199,7 @@ SQL;
         foreach( $prizes as $prize ){
           if( $prize['id'] == $win->post_excerpt ){
             update_post_meta( $result['entry_id'], 'instant_win_prize_name', $prize['name'] );
-            $result['prize']['name'] = $prize['name'];
+            $result['instantwin']['prize']['name'] = $prize['name'];
           }
         }
       }
