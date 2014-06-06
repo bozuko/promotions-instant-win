@@ -8,7 +8,7 @@ if(function_exists("register_field_group"))
       array (
         'key' => 'field_538f5e8ab1b6a',
         'label' => 'Instant Win Winning Message',
-        'name' => 'instant_win_winning_message',
+        'name' => 'message_iw_win',
         'type' => 'wysiwyg',
         'default_value' => '',
         'toolbar' => 'full',
@@ -17,7 +17,7 @@ if(function_exists("register_field_group"))
       array (
         'key' => 'field_538f5ea0b1b6b',
         'label' => 'Instant Win Losing Message',
-        'name' => 'instant_win_losing_message',
+        'name' => 'message_iw_lose',
         'type' => 'wysiwyg',
         'default_value' => '',
         'toolbar' => 'full',

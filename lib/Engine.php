@@ -76,11 +76,15 @@ class PromotionsInstantWin_Engine
     $start_timestamp = $start->getTimestamp()+1;
     $end_timestamp = $end->getTimestamp()-1;
     
+    $diff = $end_timestamp - $start_timestamp;
+    
     $stamps = array();
     
     for( $i=0; $i<$count; $i++ ){
-      $timestamp = mt_rand( $start_timestamp+1, $end_timestamp-1 );
-      $stamps[] = date('Y-m-d H:i:s', $timestamp );
+      $seconds = mt_rand( 0, $diff );
+      $t = clone $start;
+      $t->modify("+{$seconds} seconds");
+      $stamps[] = $t->format('Y-m-d H:i:s');
     }
     
     return $stamps;
@@ -93,10 +97,13 @@ class PromotionsInstantWin_Engine
     
     $stamps = array();
     
-    $interval = floor( ($end_timestamp - $start_timestamp) / $count );
+    $interval = floor( ((int)$end_timestamp - (int)$start_timestamp) / $count );
     
     for( $i=0; $i<$count; $i++ ){
-      $stamps[] = date('Y-m-d H:i:s', $start_timestamp + ($interval*$i));
+      $t = clone $start;
+      $seconds = $interval*$i;
+      $t->modify("+{$seconds} seconds");
+      $stamps[] = $t->format('Y-m-d H:i:s');
     }
     
     return $stamps;

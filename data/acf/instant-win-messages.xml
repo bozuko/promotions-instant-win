@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/3.9.1" created="2014-06-04 18:03" -->
+<!-- generator="WordPress/3.9.1" created="2014-06-06 02:26" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.1/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -26,22 +26,22 @@
 >
 
 <channel>
-	<title>Promotions Demo</title>
-	<link>http://sweeps-v2.bozuko.com/wp</link>
+	<title>Oral B Crest Professional (Staging)</title>
+	<link>https://crestoralbprofessional.dlblairsweeps.com/stage</link>
 	<description>Promotion Tagline</description>
-	<pubDate>Wed, 04 Jun 2014 18:03:08 +0000</pubDate>
+	<pubDate>Fri, 06 Jun 2014 02:26:17 +0000</pubDate>
 	<language></language>
 	<wp:wxr_version>1.1</wp:wxr_version>
-	<wp:base_site_url>http://sweeps-v2.bozuko.com/wp</wp:base_site_url>
-	<wp:base_blog_url>http://sweeps-v2.bozuko.com/wp</wp:base_blog_url>
+	<wp:base_site_url>https://crestoralbprofessional.dlblairsweeps.com/stage</wp:base_site_url>
+	<wp:base_blog_url>https://crestoralbprofessional.dlblairsweeps.com/stage</wp:base_blog_url>
 	<wp:author><wp:author_id>1</wp:author_id><wp:author_login>admin</wp:author_login><wp:author_email>mark.fabrizio@bozuko.com</wp:author_email><wp:author_display_name><![CDATA[admin]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
 	<item>
 		<title>Instant Win Messages</title>
-		<link>http://sweeps-v2.bozuko.com/wp/?acf=acf_instant-win-messages</link>
+		<link>https://crestoralbprofessional.dlblairsweeps.com/stage/?acf=acf_instant-win-messages</link>
 		<pubDate>Wed, 04 Jun 2014 18:00:31 +0000</pubDate>
 		<dc:creator>admin</dc:creator>
 		<guid isPermaLink="false">http://sweeps-v2.bozuko.com/wp/?post_type=acf&#038;p=2067</guid>
-		<wp:post_id>2067</wp:post_id>
+		<wp:post_id>2321</wp:post_id>
 		<wp:post_date>2014-06-04 14:00:31</wp:post_date>
 		<wp:post_date_gmt>2014-06-04 18:00:31</wp:post_date_gmt>
 		<wp:comment_status>closed</wp:comment_status>
@@ -53,16 +53,12 @@
 		<wp:post_type>acf</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
 			<wp:meta_key>field_538f5e8ab1b6a</wp:meta_key>
-			<wp:meta_value><![CDATA[a:11:{s:3:"key";s:19:"field_538f5e8ab1b6a";s:5:"label";s:27:"Instant Win Winning Message";s:4:"name";s:27:"instant_win_winning_message";s:4:"type";s:7:"wysiwyg";s:12:"instructions";s:0:"";s:8:"required";s:1:"0";s:13:"default_value";s:0:"";s:7:"toolbar";s:4:"full";s:12:"media_upload";s:3:"yes";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";s:5:"value";s:0:"";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:0;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:11:{s:3:"key";s:19:"field_538f5e8ab1b6a";s:5:"label";s:27:"Instant Win Winning Message";s:4:"name";s:14:"message_iw_win";s:4:"type";s:7:"wysiwyg";s:12:"instructions";s:0:"";s:8:"required";s:1:"0";s:13:"default_value";s:0:"";s:7:"toolbar";s:4:"full";s:12:"media_upload";s:3:"yes";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";s:5:"value";s:0:"";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:0;}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_538f5ea0b1b6b</wp:meta_key>
-			<wp:meta_value><![CDATA[a:11:{s:3:"key";s:19:"field_538f5ea0b1b6b";s:5:"label";s:26:"Instant Win Losing Message";s:4:"name";s:26:"instant_win_losing_message";s:4:"type";s:7:"wysiwyg";s:12:"instructions";s:0:"";s:8:"required";s:1:"0";s:13:"default_value";s:0:"";s:7:"toolbar";s:4:"full";s:12:"media_upload";s:3:"yes";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";s:5:"value";s:0:"";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:1;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:11:{s:3:"key";s:19:"field_538f5ea0b1b6b";s:5:"label";s:26:"Instant Win Losing Message";s:4:"name";s:15:"message_iw_lose";s:4:"type";s:7:"wysiwyg";s:12:"instructions";s:0:"";s:8:"required";s:1:"0";s:13:"default_value";s:0:"";s:7:"toolbar";s:4:"full";s:12:"media_upload";s:3:"yes";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:2:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:1;}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>position</wp:meta_key>
@@ -75,6 +71,10 @@
 		<wp:postmeta>
 			<wp:meta_key>hide_on_screen</wp:meta_key>
 			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>rule</wp:meta_key>
